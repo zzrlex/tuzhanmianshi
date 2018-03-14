@@ -62,6 +62,7 @@
 <style scoped lang="stylus" rel="stylesheet/stylus">
 .nav
   color #686868
+  border-top 11px solid #F5F5F5
   display flex
   width 100%
   height 74px
@@ -71,10 +72,10 @@
     text-align center
     span
       display inline-block
-      width 129px
+      width 5.5rem
       box-sizing border-box
       line-height 70px
-      font-size 23px
+      font-size 1rem
       border-bottom 4px solid #ffffff
     .navcur
       color #F2515D

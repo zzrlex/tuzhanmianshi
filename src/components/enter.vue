@@ -18,7 +18,7 @@
                 <img src="./../../static/picture/pic_show.fw.png" alt="">
                 <span>上传个人照</span>
             </div>
-            <img id = "showimg" width = "100%" height = "100%" v-show = "upsuc" src="" alt="">
+            <img id = "showimg" width = "100%" height = "90%" v-show = "upsuc" src="" alt="">
         </div>
         <div class="selectFile">
             <input type="file" @change = "toShow" id = "file">
@@ -70,7 +70,7 @@
         margin 18px auto
         border 1px solid #DCDCDC
         border-radius 5px
-        font-size 22px
+        font-size 0.95rem
         label 
             color #808080
             line-height 64px
@@ -79,7 +79,7 @@
             width 60%
     .upLoad
         width 78%
-        font-size 17px
+        font-size 0.8rem
         color #808080
         margin 18px auto
         height 210px
@@ -119,5 +119,5 @@
         display block
         background-color #F1515D
         color #ffffff
-        font-size 28px
+        font-size 1.4rem
 </style>

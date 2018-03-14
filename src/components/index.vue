@@ -128,7 +128,7 @@ export default {
   color #686868
   display flex
   position relative
-  font-size: $font-size-large-x
+  font-size: 0.92rem
   width 100%
   height 100px
   .bre 
@@ -158,7 +158,7 @@ export default {
   width 100%
   height 102px
   .searchInput
-    font-size: 20px
+    font-size: 0.84rem
     position absolute
     width 90%
     height 64px
@@ -169,12 +169,9 @@ export default {
     transform translate(-50%,-50%)
     label
       display inline-block
-      position absolute
-      top 50%
-      left 4%
-      transform translateY(-50%)
+      transform translate(20px,22px)
     .inp
-      margin-left 50px
+      margin-left 35px
       position absolute
       width 60%
       height 40%
@@ -183,7 +180,7 @@ export default {
     .sub
       position absolute
       color #F2515D
-      font-size 23px
+      font-size 1rem
       right 0
       width 20%
       height 40px
@@ -205,10 +202,10 @@ export default {
     text-align center
     span
       display inline-block
-      width 129px
+      width 5.5rem
       box-sizing border-box
       line-height 70px
-      font-size 23px
+      font-size 1rem
       border-bottom 4px solid #ffffff
     .navcur
       color #F2515D
@@ -222,25 +219,25 @@ export default {
       position relative
       margin 1%
       float left
-      width 30%
+      width 30vw
       img 
         display block
         width 100%
-        height 180px
+        height 23vh
         z-index -1
       .bottom 
         height 40px
         background-color #F2515D
         line-height 40px
         text-align center 
-        font-size 17px
+        font-size 0.8rem
       .overlay 
         height 40px
         width 100%
         line-height 40px
         position absolute
         background-color $color-text-d 
-        font-size 13px
+        font-size 0.65rem
         bottom 40px
         .number
           float right

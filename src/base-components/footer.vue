@@ -79,8 +79,9 @@
 
 .tab
     width 100%
+    font-size 0.8rem
     background-color #fff
-    height 9%
+    height 8%
     position fixed
     color #A5A5A5
     bottom 0
@@ -102,7 +103,9 @@
         white-space nowrap
         img
             display block
-            margin 0 auto
+            width 1.5rem
+            height 1.5rem
+            margin 0 auto 2px
     .show
         color #F1515D
     .line
