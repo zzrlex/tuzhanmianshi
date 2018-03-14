@@ -40,7 +40,7 @@
       <div class="showPhoto">
         <ul class ="clearfix">
           <li v-for = "(item,index) in photoList" :key = "index">
-            <img v-lazy="item.photo" alt="">
+            <img width = "100%" :height= "imageHeight" v-lazy="item.photo" alt="">
             <div class="overlay">
               &nbsp;&nbsp;&nbsp;{{item.name}}<span class = "number">{{item.ticketcount}}票&nbsp;&nbsp;&nbsp;</span>
             </div>
@@ -69,10 +69,17 @@ export default {
       page:1,
       desccol:"createtime",
       loading:false,
-      busy:false
+      busy:false,
+      imageHeight:0
     }
   },
   mounted(){
+    var dpr = window.devicePixelRatio;
+    var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    if (width / dpr > 540) {
+        width = 540 * dpr;
+    }
+    this.imageHeight = 0.3*width*1.28+'px';
     this.getList();
   },
   methods: {
@@ -219,11 +226,9 @@ export default {
       position relative
       margin 1%
       float left
-      width 30vw
+      width 30%
       img 
         display block
-        width 100%
-        height 23vh
         z-index -1
       .bottom 
         height 40px

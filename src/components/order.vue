@@ -61,6 +61,7 @@
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
 .nav
+  font-size 1rem
   color #686868
   border-top 11px solid #F5F5F5
   display flex
@@ -81,6 +82,7 @@
       color #F2515D
       border-bottom 4px solid #F1515D
 .order
+    font-size 1rem
     width 100%
     .afterTop
         border-top 1px solid #000000
@@ -95,7 +97,7 @@
         text-align center
         li 
             display inline-block
-            width 24%
+            width 23%
             height 50px
             z-index 1
         .first
